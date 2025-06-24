@@ -39,8 +39,13 @@ const startTextOnLeft = 1;
 function App() {
     return (
         <div className='portfolio'>
-            <h1 className='portfolio__project-title'>List of Projects</h1>
+            <div className='portfolio__intro'>
+                <h1 style={{textAlign: 'center'}}>My Portfolio</h1>
+                <p className='portfolio__intro-text'>My name is <strong>Jonathan Dell'Ova</strong>. I am a 3D graphics developer specializing in DX11 and DX12.</p>
+            </div>
+
             <div className='portfolio__projects'>
+                <h1 className='portfolio__project-title'>List of Projects</h1>
                 {projects.map((project, index) => (
                     <ProjectRow
                         key={project.id}

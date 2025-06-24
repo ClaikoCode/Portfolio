@@ -4,7 +4,7 @@ This section is meant to be updatated as this project evolves. I will write down
 
 ## Day 1 
 
-Learning how to setup a Vite + React project. 
+Learning how to setup a Vite + React project. Simple setup with Node.js and NPM.
 
 Learning the basics of React:
 
@@ -13,13 +13,14 @@ https://www.youtube.com/watch?v=-DTUdOJv8w8
 
 Note: Assets from main.jsx seems to have a path that is relative to a subfolder in the project folder as the following path worked for the import of react.svg: "../src/assets/react.svg". This gives a small hint to the "current working directory" equivalent, which I always find is an important back-end piece of information to understand.
 
-I have decided to use BEM. It seems to be a popular naming convention for CSS classes. I did not do much research further into different naming systems as the goal is to have *something* that is commonly used with React so that I at least adhere to *some* structure. I want to avoid bad naming from the start as it would only impair future learning when I start getting confused about my code rather than what I'm trying to express in code.
+I have decided to use BEM. It seems to be a popular naming convention for CSS classes. I did not do much research further into different naming systems as the goal is to have *something* that is commonly used with React so that I at least adhere to *a* structure. I want to avoid bad naming from the start as it would only impair future learning when I start getting confused about my code rather than what I'm trying to express in code.
 
-New units: rem, em, unitless
+New units: rem, em, unitless, percentage
 
 rem: root element font size
 em: current element font size
-unitless: simple scalar values for whatever unit was inherited.
+unitless: simple scalar values, not sure what these do
+percentage: a fraction of an inherited value from its parent
 
 I wanted to make sure that I could dynamically add any future projects or add modifications to project data easily. In the intro for React I noticed that the map function could be used to instantiate React components dynamically for each element in a list. 
 
