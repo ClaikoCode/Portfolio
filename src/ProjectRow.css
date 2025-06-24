@@ -4,8 +4,8 @@
     gap: 2rem;
     margin-bottom: 3rem;
     padding: 1.5rem;
-
-    background-color: rgba(28, 28, 28, 0.521);
+    border-radius: 16px;
+    background-color: rgba(28, 28, 28, 0.5);
 }
 
 .project-row__text {
@@ -33,14 +33,25 @@
 }
 
 .project-row__media {
-    max-height: 300px;
-    min-height: 200px;
-    width: auto;
+    max-width: 100%; /* Maximum width equal to its container. */
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-row--reversed {
     flex-direction: row-reverse;
     text-align: right;
+}
+
+/* Responsive behavior for narrow displays. 768px seemed to be the industry standard for max phone size width. */
+@media (max-width: 768px) {
+  .project-row {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .project-row--reversed {
+    flex-direction: column; /* Same as normal on mobile */
+  }
 }

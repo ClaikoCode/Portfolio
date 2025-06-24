@@ -14,21 +14,21 @@ const projects = [
     id: 2,
     title: "Physics Simulator",
     description: "Real-time physics simulation with collision detection, rigid body dynamics, and particle systems.",
-    showcaseUrl: "../src/assets/react.svg",
+    showcaseUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Physics-Fluid-Simulation-Blender.gif",
     showcaseAlt: "Physics simulation screenshot"
   },
   {
     id: 3,
     title: "Ray Tracer",
     description: "Monte Carlo ray tracer with global illumination, material system, and acceleration structures.",
-    showcaseUrl: "../src/assets/react.svg",
+    showcaseUrl: "https://www.scratchapixel.com/images/ray-tracing-camera/campixel.gif?",
     showcaseAlt: "Ray traced scene"
   },
   {
     id: 4,
     title: "Procedural Terrain",
     description: "GPU-based terrain generation using noise functions and tessellation shaders.",
-    showcaseUrl: "../src/assets/react.svg",
+    showcaseUrl: "https://i.imgur.com/HVO6cuL.gif",
     showcaseAlt: "Procedural terrain landscape"
   }
 ];
@@ -38,15 +38,17 @@ const startTextOnLeft = 1;
 
 function App() {
     return (
-        <div className="portfolio">
+        <div className='portfolio'>
             <h1 className='portfolio__project-title'>List of Projects</h1>
-            {projects.map((project, index) => (
-                <ProjectRow
-                    key={project.id}
-                    project={project}
-                    isReversed={index % 2 === startTextOnLeft}
-                />
-            ))}
+            <div className='portfolio__projects'>
+                {projects.map((project, index) => (
+                    <ProjectRow
+                        key={project.id}
+                        project={project}
+                        isReversed={index % 2 === startTextOnLeft}
+                    />
+                ))}
+            </div>
         </div>
     )
 }

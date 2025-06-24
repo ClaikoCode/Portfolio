@@ -1,3 +1,13 @@
+.portfolio {
+    padding: 2rem 0;
+}
+
+.portfolio__projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 .portfolio__project-title {
     padding: 1rem;
     text-align: center;
