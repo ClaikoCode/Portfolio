@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import ProjectRow from './ProjectRow.jsx'
+
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const projects = [
+  {
+    id: 1,
+    title: "Custom Game Engine",
+    description: "A modern C++ game engine with advanced rendering pipeline, entity-component system, and cross-platform support.",
+    showcaseUrl: "../src/assets/react.svg",
+    showcaseAlt: "Game engine rendering demo"
+  },
+  {
+    id: 2,
+    title: "Physics Simulator",
+    description: "Real-time physics simulation with collision detection, rigid body dynamics, and particle systems.",
+    showcaseUrl: "../src/assets/react.svg",
+    showcaseAlt: "Physics simulation screenshot"
+  },
+  {
+    id: 3,
+    title: "Ray Tracer",
+    description: "Monte Carlo ray tracer with global illumination, material system, and acceleration structures.",
+    showcaseUrl: "../src/assets/react.svg",
+    showcaseAlt: "Ray traced scene"
+  },
+  {
+    id: 4,
+    title: "Procedural Terrain",
+    description: "GPU-based terrain generation using noise functions and tessellation shaders.",
+    showcaseUrl: "../src/assets/react.svg",
+    showcaseAlt: "Procedural terrain landscape"
+  }
+];
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+// Put 1 for true and 0 for false.
+const startTextOnLeft = 1;
+
+function App() {
+    return (
+        <div className="portfolio">
+            <h1 className='portfolio__project-title'>List of Projects</h1>
+            {projects.map((project, index) => (
+                <ProjectRow
+                    key={project.id}
+                    project={project}
+                    isReversed={index % 2 === startTextOnLeft}
+                />
+            ))}
+        </div>
+    )
 }
 
 export default App
