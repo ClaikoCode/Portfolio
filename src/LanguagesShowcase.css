@@ -1,0 +1,27 @@
+.languages-showcase {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    max-width: 50%;
+    min-width: 200px;
+    min-height: 100px;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.language-container {
+    flex: 1;
+    text-align: center;
+    /* background-color: aliceblue; */
+}
+
+.language-container__icon {
+    max-width: 75px;
+    display:block;
+    margin: auto;
+}
+

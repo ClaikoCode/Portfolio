@@ -1,59 +1,15 @@
-import ProjectRow from './ProjectRow.jsx'
+import PortfolioProjects from './PortfolioProjects.jsx';
+import LanguagesShowcase from './LanguagesShowcase.jsx';
+import PortfolioIntro from './PortfolioIntro.jsx';
 
 import './App.css'
-
-const projects = [
-  {
-    id: 1,
-    title: "Custom Game Engine",
-    description: "A modern C++ game engine with advanced rendering pipeline, entity-component system, and cross-platform support.",
-    showcaseUrl: "../src/assets/react.svg",
-    showcaseAlt: "Game engine rendering demo"
-  },
-  {
-    id: 2,
-    title: "Physics Simulator",
-    description: "Real-time physics simulation with collision detection, rigid body dynamics, and particle systems.",
-    showcaseUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Physics-Fluid-Simulation-Blender.gif",
-    showcaseAlt: "Physics simulation screenshot"
-  },
-  {
-    id: 3,
-    title: "Ray Tracer",
-    description: "Monte Carlo ray tracer with global illumination, material system, and acceleration structures.",
-    showcaseUrl: "https://www.scratchapixel.com/images/ray-tracing-camera/campixel.gif?",
-    showcaseAlt: "Ray traced scene"
-  },
-  {
-    id: 4,
-    title: "Procedural Terrain",
-    description: "GPU-based terrain generation using noise functions and tessellation shaders.",
-    showcaseUrl: "https://i.imgur.com/HVO6cuL.gif",
-    showcaseAlt: "Procedural terrain landscape"
-  }
-];
-
-// Put 1 for true and 0 for false.
-const startTextOnLeft = 1;
 
 function App() {
     return (
         <div className='portfolio'>
-            <div className='portfolio__intro'>
-                <h1 style={{textAlign: 'center'}}>My Portfolio</h1>
-                <p className='portfolio__intro-text'>My name is <strong>Jonathan Dell'Ova</strong>. I am a 3D graphics developer specializing in DX11 and DX12.</p>
-            </div>
-
-            <div className='portfolio__projects'>
-                <h1 className='portfolio__project-title'>List of Projects</h1>
-                {projects.map((project, index) => (
-                    <ProjectRow
-                        key={project.id}
-                        project={project}
-                        isReversed={index % 2 === startTextOnLeft}
-                    />
-                ))}
-            </div>
+            <PortfolioIntro />
+            <LanguagesShowcase />
+            <PortfolioProjects />
         </div>
     )
 }

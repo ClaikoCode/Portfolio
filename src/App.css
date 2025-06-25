@@ -4,20 +4,3 @@
     max-width: 1200px;
 }
 
-.portfolio__intro {
-    margin: 1rem 0;
-}
-
-.portfolio__intro-text {
-    font-size: large;
-    padding: 0 1rem;
-}
-
-/* .portfolio__projects {
-
-} */
-
-.portfolio__project-title {
-    padding: 1rem;
-    text-align: center;
-}
