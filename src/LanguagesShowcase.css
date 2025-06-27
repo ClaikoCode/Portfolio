@@ -6,22 +6,37 @@
     max-width: 50%;
     min-width: 200px;
     min-height: 100px;
-    /* border: 1px solid red; */
     flex-wrap: wrap;
     margin: auto;
     gap: 10px;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .language-container {
     flex: 1;
     text-align: center;
-    /* background-color: aliceblue; */
 }
 
 .language-container__icon {
     max-width: 75px;
+    height: auto;
     display:block;
     margin: auto;
+}
+
+.tech-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 1rem;
+}
+
+.tech-container__icon {
+    min-height: 80px;
+    width: auto;
+    flex: 1;
 }
 
