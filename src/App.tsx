@@ -1,6 +1,6 @@
-import PortfolioProjects from './PortfolioProjects.jsx';
-import LanguagesShowcase from './LanguagesShowcase.jsx';
-import PortfolioIntro from './PortfolioIntro.jsx';
+import PortfolioProjects from './PortfolioProjects';
+import LanguagesShowcase from './LanguagesShowcase';
+import PortfolioIntro from './PortfolioIntro';
 
 import './App.css'
 

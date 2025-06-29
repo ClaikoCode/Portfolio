@@ -1,8 +1,9 @@
-import ProjectRow from './ProjectRow.jsx'
+import ProjectRow, {type Project} from './ProjectRow'
+
 
 import './PortfolioProjects.css'
 
-const projects = [
+const projects: Project[] = [
   {
     id: 1,
     title: "Custom Game Engine",

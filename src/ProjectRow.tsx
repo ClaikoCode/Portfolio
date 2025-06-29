@@ -1,6 +1,19 @@
 import "./ProjectRow.css"
 
-function ProjectRow({project, isReversed = false}) {
+export type Project = {
+    id: number;
+    title: string;
+    description: string;
+    showcaseUrl: string;
+    showcaseAlt: string;
+}
+
+type ProjectRowProps = {
+    project: Project;
+    isReversed?: boolean;
+}
+
+function ProjectRow({project, isReversed = false}: ProjectRowProps) {
     const projectRowClassName = "project-row " + (isReversed ? "project-row--reversed" : "")
 
     return (
