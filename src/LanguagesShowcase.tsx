@@ -1,28 +1,18 @@
+import {SquareIcon, WordmarkIcon} from './IconComponents'
+
 import langC from './assets/cIcon.svg'
 import langCpp from './assets/cppIcon.svg'
 import langLua from './assets/LuaIcon.svg'
 import langPython from './assets/PythonIcon.svg'
 import techDX12 from './assets/DX12IconWordmark-cropped.svg'
 import techDX11 from './assets/DX11IconWordmark-cropped.svg'
+import techCuda from './assets/NvidiaCUDAWordmark.svg'
 
 import './LanguagesShowcase.css'
-
-interface IconProps {
-    iconImage: string;
-    altText: string;
-}
 
 interface TechProps {
     techImage: string;
     altText: string;
-}
-
-function LanguageIcon({iconImage, altText}: IconProps) {
-    return (
-        <div className='language-container'>
-            <img className='language-container__icon' alt={`Icon for ${altText}`} src={iconImage}/>
-        </div>
-    )
 }
 
 function TechIcon({techImage, altText}: TechProps) {
@@ -37,15 +27,16 @@ function LanguagesShowcase() {
     return (
         <div>
             <div className='languages-showcase'>
-                <LanguageIcon iconImage={langC} altText={'C'}/>
-                <LanguageIcon iconImage={langCpp} altText={'C++'}/>
-                <LanguageIcon iconImage={langLua} altText={'Lua'}/>
-                <LanguageIcon iconImage={langPython} altText={'Python'}/>
+                <SquareIcon iconImage={langC} altText={'C'}/>
+                <SquareIcon iconImage={langCpp} altText={'C++'}/>
+                <SquareIcon iconImage={langLua} altText={'Lua'}/>
+                <SquareIcon iconImage={langPython} altText={'Python'}/>
             </div>
 
             <div className='tech-showcase'>
-                <TechIcon techImage={techDX12} altText={'DX12'}/>
-                <TechIcon techImage={techDX11} altText={'DX11'}/>
+                <WordmarkIcon iconImage={techDX12} altText={'DX12'}/>
+                <WordmarkIcon iconImage={techDX11} altText={'DX11'}/>
+                <WordmarkIcon iconImage={techCuda} altText={'Cuda'}/>
             </div>
         </div>
     )

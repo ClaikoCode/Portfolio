@@ -1,0 +1,20 @@
+.icon-container {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+.icon-container__square-image {
+    max-width: 75px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon-container__wordmark-image {
+    min-height: 80px;
+    width: auto;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}

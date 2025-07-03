@@ -12,18 +12,6 @@
     padding: 1rem;
 }
 
-.language-container {
-    flex: 1;
-    text-align: center;
-}
-
-.language-container__icon {
-    max-width: 75px;
-    height: auto;
-    display:block;
-    margin: auto;
-}
-
 .tech-showcase {
     display: flex;
     justify-content: center;
@@ -34,9 +22,5 @@
     padding: 1rem;
 }
 
-.tech-container__icon {
-    min-height: 80px;
-    width: auto;
-    flex: 1;
-}
+
 
