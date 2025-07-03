@@ -4,7 +4,6 @@ export type IconProps = {
     iconImage: string;
     altText: string;
     link?: string | null;
-    size?: string; // Will add an inline style specifying width. 
 }
 
 enum IconType {
@@ -12,10 +11,8 @@ enum IconType {
     Wordmark
 }
 
-const DefaultSquareIconSize: string = '75px';
-
 // Takes in icon props and returns a JSX element with a class name corresponding to a given IconType.
-function GiveImageElement({iconImage, altText, link, size}: IconProps, iconType: IconType) {
+function GiveImageElement({iconImage, altText, link}: IconProps, iconType: IconType) {
     let classNameStr = 'icon-container__';
     
     switch(iconType) {
@@ -29,7 +26,7 @@ function GiveImageElement({iconImage, altText, link, size}: IconProps, iconType:
             classNameStr += 'invalid-image';
     }
 
-    const imgElement = <img className={classNameStr} alt={`Icon for ${altText}.`} src={iconImage} style={{width: `${size}`}}/>
+    const imgElement = <img className={classNameStr} alt={`Icon for ${altText}.`} src={iconImage} />
 
     return (
         <div className='icon-container' >
@@ -38,8 +35,8 @@ function GiveImageElement({iconImage, altText, link, size}: IconProps, iconType:
     )
 }
 
-export function SquareIcon({iconImage, altText, link = null, size = DefaultSquareIconSize}: IconProps) {
-    return GiveImageElement({iconImage, altText, link, size}, IconType.Square)
+export function SquareIcon({iconImage, altText, link = null}: IconProps) {
+    return GiveImageElement({iconImage, altText, link}, IconType.Square)
 }
 
 export function WordmarkIcon({iconImage, altText, link = null}: IconProps) {

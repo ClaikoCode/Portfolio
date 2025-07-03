@@ -30,10 +30,12 @@
     flex: 1;
     display: flex; /* Make showcase div a flex container itself to easier manipulate its content positioning. */
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .project-row__media {
-    height: 12rem; /* Maximum height equal to its container. */
+    height: 12rem; 
     width: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -53,5 +55,11 @@
   
   .project-row--reversed {
     flex-direction: column; /* Same as normal on mobile */
+  }
+
+  .project-row__media {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
   }
 }
