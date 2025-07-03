@@ -21,7 +21,7 @@ function ConnectMail() {
     return (
         <div className='connect-mail'>
             <h2>Contact me directly</h2>
-            <p>jonathan.dellova42@gmail.com</p>
+            <a href='mailto:jonathan.dellova42@gmail.com'>jonathan.dellova42@gmail.com</a>
         </div>
     )
 }
