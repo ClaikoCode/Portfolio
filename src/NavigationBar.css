@@ -1,0 +1,38 @@
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    width: 90%;
+    max-width: calc(1200px * 0.90); /* ← Match portfolio max-width */
+    left: 50%;                      /* ← Center it */
+    transform: translateX(-50%);    /* ← Perfect centering */
+    top: 10px;
+    z-index: 1000;
+    margin: 0;
+}
+
+.navbar__list {
+    background-color: rgb(24, 24, 24);
+    border-radius: 16px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__item {
+    /* flex: 1; */
+    /* border: 1px solid red; */
+    border-radius: 24px;
+    margin: 10px;
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__link {
+    font-size: 1.5rem;
+}
