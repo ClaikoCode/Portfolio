@@ -39,7 +39,7 @@ const startTextOnLeft = 1;
 
 function PortfolioProjects() {
     return (
-        <div className='projects'>
+        <div className='projects' id='projects'>
             <h1 className='projects__project-title'>List of Projects</h1>
             {projects.map((project, index) => (
                 <ProjectRow
