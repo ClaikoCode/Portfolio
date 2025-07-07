@@ -1,13 +1,28 @@
+import { useRef } from 'react';
+
 import './NavigationBar.css';
 
-export function NavigationBar({ items, className = '' }) {
-    const handleNavClick = (event, href) => {
+export type NavbarItem = {
+    id: string;
+    href: string;
+    label: string;
+}
+
+export type NavbarProps = {
+    items: NavbarItem[];
+    className?: string;
+}
+
+export default function NavigationBar({ items, className = '' }: NavbarProps) {
+    const navbarRef = useRef<HTMLElement>(null);
+
+    const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
         event.preventDefault(); // Override default behavior of anchor click.
 
         // Find the DOM element that matches href. 
         const targetElement = document.querySelector(href);
-        if (targetElement) {
-            const navbarElement = document.querySelector('.navbar');
+        const navbarElement = navbarRef.current;
+        if (targetElement instanceof HTMLElement && navbarElement) {
             const navbarHeight = navbarElement.offsetHeight;
 
             // Dynamically find a scroll pos that does not cover the content.
@@ -25,7 +40,7 @@ export function NavigationBar({ items, className = '' }) {
 
     return (
         // Navigation tag as it will contain links for navigating the site.
-        <nav className={`navbar ${className}`}>
+        <nav ref={navbarRef} className={`navbar ${className}`}>
             <ul className='navbar__list'>
                 {items.map((item) => ( // Instantiate each item in the navbar.
                     <li key={item.id} className='navbar__item'>
