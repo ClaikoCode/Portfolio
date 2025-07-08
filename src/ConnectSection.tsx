@@ -8,7 +8,7 @@ import linkedinIcon from './assets/LinkedinIcon.svg'
 function ConnectSocials() {
     return (
         <div className='connect-socials'>
-            <h2 className='connect-socials__title'>Socials</h2>
+            <h2 className='connect-socials__title'>Connect</h2>
             <div className='connect-socials__links'>
                 <SquareIcon iconImage={githubIcon} altText='Github' link='https://github.com/ClaikoCode' />
                 <SquareIcon iconImage={linkedinIcon} altText='Linkedin' link='https://www.linkedin.com/in/jonathan-dellova/' />
@@ -37,7 +37,7 @@ function ConnectOther() {
 
 function ConnectSection() {
     return (
-        <div className="connect-section">
+        <div className="connect-section" id='connect'>
             <ConnectSocials />
             <ConnectMail />
             <ConnectOther />

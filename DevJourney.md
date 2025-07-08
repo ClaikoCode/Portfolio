@@ -75,3 +75,11 @@ The centering of the navbar proved to be a much bigger problem than I thought or
 ## Day 8
 
 Converting the navbar file to Typescript revealed that I was not using React optimally. Using document.querySelector() returns a regular Element in TS, which did not have the offsetHeight field. This revealed that I should be checking if it is indeed a HTML element or not. That type DOES have the field I was looking for. The same thing should have been applied to the navbar element I was fetching from the DOM but as the navbar itself is a React element, a better way of handling it is through react refs. Because I have a background in C++, I am very comfortable with references as a concept, so this felt natural. 
+
+## Day 9
+
+This day consisted of applying a pre-defined color palette to my portfolio. I have wanted to do this for a while and finally decided to do it when I had to copy paste yet another color to fix some contrasting issues with my wordmark images. This type of code duplication is not maintainable, even if I'm working entirely alone on this project. I want my portfolio to have harmony and cohesion between all its elements, which a palette would solve nicely. 
+
+I searched up some example palettes and learned how to use CSS variables to define a set of four colors in the root of the page. From these variables I defined app-specific color variables such as "element-base-color" and "detail-color". These variables were swapped out for the majority of the colors defined in all other CSS files. If I want to change how my page looks in the future, I simply have to update four lines and the rest should solve itself.
+
+I also updated several elements to have better spacing and improved consistency of padding and margin usage. I noticed I had a more intuitive understanding of the boxmodel when implementing these adjustments as I was often able to replicate whatever vision I had in my head in CSS code, which I was happily surprised about. 

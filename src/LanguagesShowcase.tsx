@@ -4,28 +4,21 @@ import langC from './assets/cIcon.svg'
 import langCpp from './assets/cppIcon.svg'
 import langLua from './assets/LuaIcon.svg'
 import langPython from './assets/PythonIcon.svg'
+
+// import langC from './assets/cIconPlain.svg'
+// import langCpp from './assets/cppIconPlain.svg'
+// import langLua from './assets/LuaIconPlain.svg'
+// import langPython from './assets/PythonIconPlain.svg'
+
 import techDX12 from './assets/DX12IconWordmark-cropped.svg'
 import techDX11 from './assets/DX11IconWordmark-cropped.svg'
 import techCuda from './assets/NvidiaCUDAWordmark.svg'
 
 import './LanguagesShowcase.css'
 
-interface TechProps {
-    techImage: string;
-    altText: string;
-}
-
-function TechIcon({techImage, altText}: TechProps) {
-    return (
-        <div className='tech-container'>
-            <img className='tech-container__icon' alt={`Icon for ${altText}`} src={techImage}/>
-        </div>
-    )
-}
-
 function LanguagesShowcase() {
     return (
-        <div>
+        <div className='showcase-container'>
             <div className='languages-showcase'>
                 <SquareIcon iconImage={langC} altText={'C'}/>
                 <SquareIcon iconImage={langCpp} altText={'C++'}/>

@@ -7,8 +7,9 @@ import NavigationBar, {NavbarItem } from './NavigationBar';
 import './App.css'
 
 const navbarItems: NavbarItem[] = [
-    {id: 'intro', href: '#intro', label: 'Intro'},
-    {id: 'projects', href: '#projects', label: 'Projects'}
+    {id: 'intro', href: '#intro', label: 'Introduction'},
+    {id: 'projects', href: '#projects', label: 'Projects'},
+    {id: 'connect', href: '#connect', label: 'Connect'}
 ];
 
 function App() {

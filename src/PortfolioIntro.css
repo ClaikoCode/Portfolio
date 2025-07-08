@@ -1,8 +1,19 @@
 .intro {
-    margin: 1rem 0;
+    margin-bottom: 30px;
+    padding: 0;
 }
 
 .intro__text {
+    margin: 0px auto;
+}
+
+.intro strong {
+    color: var(--detail-color);
+}
+
+.intro p {
     font-size: large;
     padding: 0 1rem;
 }
+
+
