@@ -14,8 +14,8 @@
     min-width: 0;
 }
 
-.project-row__title {
-    font-size: 1.5rem;
+.project-row__text h2 {
+    font-size: 2rem;
     margin-bottom: 0.75rem;
     margin-top: 0;
     color: var(--detail-color);

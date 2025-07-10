@@ -19,7 +19,7 @@ function ProjectRow({project, isReversed = false}: ProjectRowProps) {
     return (
         <div className={projectRowClassName}>
             <div className="project-row__text">
-                <h3 className="project-row__title">{project.title}</h3>
+                <h2>{project.title}</h2>
                 <p className="project-row__desc">{project.description}</p>
             </div>
 

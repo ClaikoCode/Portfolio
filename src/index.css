@@ -10,10 +10,12 @@
   --background-color: var(--primary-color);
   --element-background-color: var(--primary-dark);
   --element-base-color: var(--secondary-color);
-  --text-base-color: var(--fourth-color);
   --detail-color: var(--third-color);
+  --text-base-color: var(--fourth-color);
   --bright-highlight: rgba(255, 255, 255, 0.3);
   --soft-highlight: rgba(255, 255, 255, 0.1);
+  --hard-shadow: rgba(0, 0, 0, 0.3);
+  --soft-shadow: rgba(0, 0, 0, 0.1);
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -31,12 +33,12 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--detail-color);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
+  color: color-mix(in srgb, var(--detail-color), black 30%);
 }
 
 body {
