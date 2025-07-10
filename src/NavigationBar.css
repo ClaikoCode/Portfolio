@@ -11,7 +11,7 @@
 }
 
 .navbar__list {
-    background-color: var(--primary-color-dark);
+    background-color: var(--element-background-color);
     border-radius: 16px;
     display: flex;
     list-style: none;

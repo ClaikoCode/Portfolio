@@ -1,5 +1,5 @@
 .connect-section {
-    background-color: var(--primary-color-dark);
+    background-color: var(--element-background-color);
     display: flex;
     justify-content: center;
     align-items: stretch;

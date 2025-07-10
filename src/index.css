@@ -1,17 +1,19 @@
-:root {
-  --primary-color: #222831;
-  --primary-color-dark: #1a1e27;
-  --secondary-color: #393e46;
-  --secondary-color-light: #4d535e;
-  --third-color: #f96d00;
-  --fourth-color: #f2f2f2;
+:root {  
+  --primary-color: #323643;
+  --secondary-color: #606470;
+  --third-color: #93deff;
+  --fourth-color: #f7f7f7;
 
+  --primary-dark: color-mix(in srgb, var(--primary-color), black 20%);
+  --secondary-color-light: color-mix(in srgb, var(--secondary-color), white 20%);
+  
   --background-color: var(--primary-color);
+  --element-background-color: var(--primary-dark);
   --element-base-color: var(--secondary-color);
   --text-base-color: var(--fourth-color);
   --detail-color: var(--third-color);
-  --hard-shadow: rgba(255, 255, 255, 0.3);
-  --soft-shadow: rgba(255, 255, 255, 0.1);
+  --bright-highlight: rgba(255, 255, 255, 0.3);
+  --soft-highlight: rgba(255, 255, 255, 0.1);
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -82,4 +82,10 @@ This day consisted of applying a pre-defined color palette to my portfolio. I ha
 
 I searched up some example palettes and learned how to use CSS variables to define a set of four colors in the root of the page. From these variables I defined app-specific color variables such as "element-base-color" and "detail-color". These variables were swapped out for the majority of the colors defined in all other CSS files. If I want to change how my page looks in the future, I simply have to update four lines and the rest should solve itself.
 
-I also updated several elements to have better spacing and improved consistency of padding and margin usage. I noticed I had a more intuitive understanding of the boxmodel when implementing these adjustments as I was often able to replicate whatever vision I had in my head in CSS code, which I was happily surprised about. 
+I also updated several elements to have better spacing and improved consistency of padding and margin usage. I noticed I had a more intuitive understanding of the boxmodel when implementing these adjustments as I was often able to replicate whatever vision I had in my head in CSS code, which I was happily surprised about.
+
+## Day 10
+
+I improved my color palette "system" further by borrowing some knowledge from my shader programming experience. Linear interpolation is an extremely useful tool in many ways but it is used extensively when mixing colors together. I wanted to have an equivalent of this as I had defined a lighter version of my primary and a darker version of my secondary that was simply picking a color value that was brighter or darker in the picking box. Whilst this is not a problem as there are only two colors to handle, I stil wanted a better solution. 
+
+That introduced me to the color-mix() function in CSS. I now mix the base color with white or black by a certain percantage to make it brighter or darker, which worked! The four colors in my palette are now fully responsible of determening the look of the page. All other color variables are now relative to that base palette. This relative offset of colors might not work properly if I want to have a light-theme verison of the website, but that is not part of my goal currently. 
