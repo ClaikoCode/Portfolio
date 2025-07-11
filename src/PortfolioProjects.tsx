@@ -12,7 +12,7 @@ type PortfolioProjectsProps = {
 function PortfolioProjects({ items }: PortfolioProjectsProps) {
 	return (
 		<div className='projects' id='projects'>
-			<h1 className='projects__project-title'>List of Projects</h1>
+			<h1 className='projects__project-title'>Notable Projects</h1>
 			{items.map((project, index) => (
 				<ProjectRow
 					key={project.id}

@@ -50,8 +50,14 @@ function ExperienceShowcase() {
 
 			<h2>Agile working experience</h2>
 			<p>
-				Whilst my education consisted of <b>five years</b> filled with a wide array of courses, I gained the most experience
-				from two specific ones: <b>Small Game Project</b> (7 weeks) and <b>Large Game Project</b> (13 weeks). The goal of these
+				Whilst my education consisted of <b>five years</b> filled with a wide array of courses that gave me both theoretical and practical knowledge in software development.
+				However, working on a project in the real world is not often done by a single person. The team aspects of software development is as important if not more important than
+				having deep practical knowledge with code. Without good communication and clear responsibilities, a project is doomed to fail 
+				sooner or later due to misunderstandings and failure to deliver on time.
+			</p>
+
+			<p>
+				This is why I am especially grateful that specifically two courses were part of my curriculum: <b>Small Game Project</b> (7 weeks) and <b>Large Game Project</b> (13 weeks). The goal of these
 				courses were to simulate a work environment where me and my classmates were given our own office
 				where we developed a game all the way from a concept in our minds to a fully
 				working and playable product.
