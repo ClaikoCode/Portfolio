@@ -11,7 +11,7 @@
 	padding: 20px;
 	background: var(--element-base-color);
 	margin: 0px auto;
-	background: radial-gradient(ellipse 100% 120% at top, gold -20%, var(--element-base-color) 65%);
+	background: radial-gradient(ellipse 100% 120% at top, gold -10%, var(--element-base-color) 65%);
 }
 
 .tech-showcase {
@@ -21,7 +21,7 @@
 	align-content: center;
 	flex-wrap: wrap;
 	gap: 30px;
-	margin: 30px auto;
+	margin: 45px auto;
 }
 
 #first.tech-showcase {

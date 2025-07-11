@@ -16,6 +16,7 @@ import techDX12 from './assets/DX12IconWordmark-cropped.svg'
 import techDX11 from './assets/DX11IconWordmark-cropped.svg'
 import techCuda from './assets/NvidiaCUDAWordmark.svg'
 import techReact from './assets/reactIcon.svg'
+import techTypescript from './assets/TypescriptIcon.svg'
 
 import './ExperienceShowcase.css'
 
@@ -25,7 +26,7 @@ function ExperienceShowcase() {
 			<h1>Experience</h1>
 
 			<h3>
-				During my time at BTH as well as through personal endeavors, I have gained extensive knowledge in several programming languages and technologies that are listed bellow, ordered by experience from top to bottom.
+				During my time at BTH as well as through personal endeavors, I have gained extensive knowledge in several programming languages and technologies that are listed bellow. They are ordered by how much experience and confidence I have in each, from top to bottom.
 			</h3>
 
 			<div className='showcase-container'>
@@ -44,6 +45,7 @@ function ExperienceShowcase() {
 
 				<div className='tech-showcase' id='last'>
 					<SquareIcon iconImage={langJavascript} altText={'JavaScript'} />
+					<SquareIcon iconImage={techTypescript} altText={'TypeScript'} />
 					<SquareIcon iconImage={techReact} altText={'React'} />
 				</div>
 			</div>
