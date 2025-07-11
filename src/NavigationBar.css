@@ -1,44 +1,47 @@
 .navbar {
-    background-color: transparent;
-    position: fixed;
-    width: 90%;
-    max-width: calc(1200px * 0.90); /* ← Match portfolio max-width */
-    left: 50%;                      /* ← Center it */
-    transform: translateX(-50%);    /* ← Perfect centering */
-    top: 10px;
-    z-index: 1000;
-    margin: 0;
+	background-color: transparent;
+	position: fixed;
+	width: 90%;
+	max-width: calc(1200px * 0.90);
+	/* ← Match portfolio max-width */
+	left: 50%;
+	/* ← Center it */
+	transform: translateX(-50%);
+	/* ← Perfect centering */
+	top: 10px;
+	z-index: 1000;
+	margin: 0;
 }
 
 .navbar__list {
-    background-color: var(--element-background-color);
-    border-radius: 16px;
-    display: flex;
-    list-style: none;
-    padding: 5px;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
+	background-color: var(--element-background-color);
+	border-radius: 16px;
+	display: flex;
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
 }
 
 .navbar__item {
-    /* flex: 1; */
-    /* border: 1px solid red; */
-    border-radius: 24px;
-    margin: 10px;
-    padding: 5px 15px;
-    background-color: var(--element-base-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 4px 8px 5px var(--soft-shadow);
+	/* flex: 1; */
+	/* border: 1px solid red; */
+	border-radius: 24px;
+	margin: 10px;
+	padding: 5px 15px;
+	background-color: var(--element-base-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 4px 8px 5px var(--soft-shadow);
 }
 
 .navbar__link {
-    font-size: 1.5rem;
-    color: var(--text-base-color);
+	font-size: 1.5rem;
+	color: var(--text-base-color);
 }
 
 .navbar__item a:hover {
-    color: color-mix(in srgb, currentColor, var(--detail-color) 60%);
+	color: color-mix(in srgb, currentColor, var(--detail-color) 60%);
 }

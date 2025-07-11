@@ -1,4 +1,4 @@
-import {SquareIcon, WordmarkIcon} from './IconComponents'
+import { SquareIcon, WordmarkIcon } from './IconComponents'
 
 import langC from './assets/cIcon.svg'
 import langCpp from './assets/cppIcon.svg'
@@ -17,22 +17,22 @@ import techCuda from './assets/NvidiaCUDAWordmark.svg'
 import './LanguagesShowcase.css'
 
 function LanguagesShowcase() {
-    return (
-        <div className='showcase-container'>
-            <div className='languages-showcase'>
-                <SquareIcon iconImage={langC} altText={'C'}/>
-                <SquareIcon iconImage={langCpp} altText={'C++'}/>
-                <SquareIcon iconImage={langLua} altText={'Lua'}/>
-                <SquareIcon iconImage={langPython} altText={'Python'}/>
-            </div>
+	return (
+		<div className='showcase-container'>
+			<div className='languages-showcase'>
+				<SquareIcon iconImage={langC} altText={'C'} />
+				<SquareIcon iconImage={langCpp} altText={'C++'} />
+				<SquareIcon iconImage={langLua} altText={'Lua'} />
+				<SquareIcon iconImage={langPython} altText={'Python'} />
+			</div>
 
-            <div className='tech-showcase'>
-                <WordmarkIcon iconImage={techDX12} altText={'DX12'}/>
-                <WordmarkIcon iconImage={techDX11} altText={'DX11'}/>
-                <WordmarkIcon iconImage={techCuda} altText={'Cuda'}/>
-            </div>
-        </div>
-    )
+			<div className='tech-showcase'>
+				<WordmarkIcon iconImage={techDX12} altText={'DX12'} />
+				<WordmarkIcon iconImage={techDX11} altText={'DX11'} />
+				<WordmarkIcon iconImage={techCuda} altText={'Cuda'} />
+			</div>
+		</div>
+	)
 }
 
 export default LanguagesShowcase
