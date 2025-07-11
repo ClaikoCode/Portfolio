@@ -23,3 +23,11 @@
 	gap: 30px;
 	margin: 30px auto;
 }
+
+#first.tech-showcase {
+	margin-top: 0px;
+}
+
+#last.tech-showcase {
+	margin-bottom: 0px;
+}

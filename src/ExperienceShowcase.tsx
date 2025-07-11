@@ -29,7 +29,7 @@ function ExperienceShowcase() {
 			</h3>
 
 			<div className='showcase-container'>
-				<div className='tech-showcase'>
+				<div className='tech-showcase' id='first'>
 					<SquareIcon iconImage={langCpp} altText={'C++'} />
 					<SquareIcon iconImage={langC} altText={'C'} />
 					<WordmarkIcon iconImage={techDX11} altText={'DX11'} />
@@ -42,7 +42,7 @@ function ExperienceShowcase() {
 					<WordmarkIcon iconImage={techCuda} altText={'Cuda'} />
 				</div>
 
-				<div className='tech-showcase'>
+				<div className='tech-showcase' id='last'>
 					<SquareIcon iconImage={langJavascript} altText={'JavaScript'} />
 					<SquareIcon iconImage={techReact} altText={'React'} />
 				</div>
@@ -52,7 +52,7 @@ function ExperienceShowcase() {
 			<p>
 				Whilst my education consisted of <b>five years</b> filled with a wide array of courses that gave me both theoretical and practical knowledge in software development.
 				However, working on a project in the real world is not often done by a single person. The team aspects of software development is as important if not more important than
-				having deep practical knowledge with code. Without good communication and clear responsibilities, a project is doomed to fail 
+				having deep practical knowledge with code. Without good communication and clear responsibilities, a project is doomed to fail
 				sooner or later due to misunderstandings and failure to deliver on time.
 			</p>
 
