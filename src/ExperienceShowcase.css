@@ -1,12 +1,20 @@
+.experience-section {}
+
+.experience-section h3 {
+	text-align: center;
+	color: var(--detail-color);
+}
+
 .showcase-container {
 	border-radius: 18px;
 	box-shadow: 0px 0px 25px var(--bright-highlight);
 	padding: 20px;
-	background-color: var(--element-base-color);
+	background: var(--element-base-color);
 	margin: 0px auto;
+	background: radial-gradient(ellipse 100% 120% at top, gold -20%, var(--element-base-color) 65%);
 }
 
-.languages-showcase {
+/* .languages-showcase {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -18,7 +26,7 @@
 	margin: 0px auto;
 	margin-bottom: 20px;
 	gap: 10px;
-}
+} */
 
 .tech-showcase {
 	display: flex;
@@ -26,6 +34,6 @@
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
-	gap: 50px;
-	margin: 0 auto;
+	gap: 30px;
+	margin: 30px auto;
 }
