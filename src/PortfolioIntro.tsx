@@ -18,8 +18,8 @@ function PortfolioIntro() {
 				</p>
 
 				<p>
-					My degree, which is a <b>Master of Science in Engineering: Game and Software Engineering</b>, at Blekinge Institute of Technology (BTH)
-					has given me specialized knowledge in efficient real-time programming which I gained from courses such as
+					My degree, a <b>Master of Science in Engineering: Game and Software Engineering</b>, at <a href='https://www.bth.se/'>Blekinge Institute of Technology (BTH)</a> has
+					given me specialized knowledge in efficient real-time programming which I gained from courses such as
 					operating systems, compiler design and translation technique, multi-threaded programming, and lower level 3D programming (DX11 and DX12), just to name a few.
 					It has also given me more general but still essential knowledge in
 					leadership and team management, Agile frameworks, artificial intelligence, calculus and statistics,

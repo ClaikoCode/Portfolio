@@ -40,7 +40,7 @@ function ConnectSection() {
 		<div className="connect-section" id='connect'>
 			<ConnectSocials />
 			<ConnectMail />
-			<ConnectOther />
+			{/* <ConnectOther /> */}
 		</div>
 	)
 }
