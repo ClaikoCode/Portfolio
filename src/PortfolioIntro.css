@@ -15,3 +15,17 @@
 	font-size: large;
 	padding: 0 1rem;
 }
+
+.intro__text ul {
+	list-style-position: inside;
+	padding: 0.5rem 1rem;
+	background: radial-gradient(circle at left 200%, var(--detail-color) 0%, transparent 65%);
+	border-radius: 8px;
+	font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+	.intro__text ul {
+		background: radial-gradient(circle at left 160%, var(--detail-color) 0%, transparent 85%);
+	}
+}

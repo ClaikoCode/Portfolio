@@ -27,11 +27,11 @@ const projects: Project[] = [
 	{
 		id: 1,
 		title: "Tinker Tails Rendering System",
-		description: "The rendering system used in Tinker Tails (large game project) built from scratch in modern C++ using DirectX 11.",
-		showcaseUrl: "/vite.svg",
+		description: "The rendering system used in Tinker Tails (large game project) built from scratch in modern C++ using DirectX 11. No third-party DX11 wrappers were used and all shader code was written in HLSL.",
+		showcaseUrl: "/TinkerTails.png",
 		showcaseAlt: "Game engine rendering demo",
-		videoUrl: "/BloomInGame.mp4",
-		expandedDesc: "The rendering system features: deferred PBR rendering pipeline, internal GPU resource management and abstraction, HLSL shader hot-reloading, back-to-front transparency render ordering, and more."
+		videoUrl: "https://www.youtube.com/embed/NRiXL1utbLc",
+		expandedDesc: "The rendering system features: deferred PBR rendering pipeline, internal GPU resource management and abstraction, HLSL shader hot-reloading, modern PPFX such as multi-pass bloom and HDR tone-mapping, back-to-front transparency render ordering, and more. Additional tech is shown towards the middle of the video."
 	},
 	{
 		id: 4,
@@ -46,7 +46,7 @@ const projects: Project[] = [
 		id: 2,
 		title: "MiniJava Compiler",
 		description: "A solo developed compiler for a subset of Java called MiniJava. The project was part of an optional course in compiler design, which I received top grade in.",
-		showcaseUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Physics-Fluid-Simulation-Blender.gif",
+		showcaseUrl: "./CompilerPreview.gif",
 		showcaseAlt: "Physics simulation screenshot",
 		videoUrl: "/RCDemo.mp4",
 		expandedDesc: "The compiler includes: lexing, parsing, AST generation, semantic analysis, IR creation, and code generation."
