@@ -6,7 +6,7 @@ function PortfolioIntro() {
 			<h1>Introduction</h1>
 			<div className='intro__text'>
 				<p id='first'>
-					My name is <strong className='my-name'>Jonathan Dell'Ova</strong>
+					My name is <strong className='my-name'>Jonathan&nbsp;Dell'Ova</strong>
 				</p>
 
 				<p>

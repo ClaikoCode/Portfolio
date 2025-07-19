@@ -38,4 +38,8 @@
 	.intro__text ul {
 		background: radial-gradient(circle at left 170%, var(--detail-color) 0%, transparent 72%);
 	}
+
+	.intro .my-name {
+		font-size: 2.0rem;
+	}
 }
