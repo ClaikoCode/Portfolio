@@ -5,7 +5,7 @@
 	box-shadow: 0 0 15px var(--bright-highlight);
 	margin-bottom: 2rem;
 
-	--animation-time: 0.8s;
+	--animation-time: 1.2s;
 
 	background: linear-gradient(var(--element-base-color) 50%, color-mix(in srgb, var(--element-base-color) 70%, var(--detail-color)) 100%);
 }
@@ -69,19 +69,27 @@
 	max-height: 200px;
 	object-fit: cover;
 	border-radius: 8px;
+	opacity: 1;
+	max-width: 100%;
+
+	transition: opacity var(--animation-time) ease-in-out;
+}
+
+.project-container--expanded .project-content__image {
+	opacity: 0;
+	max-width: 0%;
 }
 
 .video-container {
 	width: 100%;
-	display: none;
+	max-width: 0%;
+	opacity: 0;
+	transition: opacity var(--animation-time) ease-in-out;
 }
 
 .project-container--expanded .video-container {
-	display: block;
-}
-
-.project-container--expanded .project-content__image {
-	display: none;
+	opacity: 1;
+	max-width: 100%;
 }
 
 .project-content__video {
