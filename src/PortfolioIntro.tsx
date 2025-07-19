@@ -5,12 +5,12 @@ function PortfolioIntro() {
 		<div className='intro' id='intro'>
 			<h1>Introduction</h1>
 			<div className='intro__text'>
-				<p>
-					My name is <strong>Jonathan Dell'Ova</strong>.
+				<p id='first'>
+					My name is <strong className='my-name'>Jonathan Dell'Ova</strong>
 				</p>
 
 				<p>
-					I am a video game developer primarily experienced in game engine and 3D graphics programming.
+					I am a video game developer primarily experienced in game engine programming and 3D graphics programming.
 					This includes everything from setting up a C++ project with third-party
 					library building and linking (EnTT, ImGui, CUDA, etc.) to creating a rendering engine
 					in DirectX 11 with a frustum culled render queue, PBR rendering pipeline, UUID based model asset manager/loader,
@@ -44,9 +44,9 @@ function PortfolioIntro() {
 				</ul>
 
 				<p>
-					Although these were all part of my curriculum, it is the projects themselves that has given me the most experience as a software engineer.
-					Almost every course had its own project but a handful of them has stood out to me. Not only in terms of complexity, but also in terms of how proud I am for 
-					having overcome the challenge that came with them and how much I learned from them.
+					Although these were all part of my curriculum, it is the projects themselves that have given me the most experience as a software engineer.
+					Almost every course had its own project but a select few has stood out to me. Not only in terms of complexity, but also in terms of how proud I am for
+					having overcome the challenges that accompanied these projects and how much I learned from them. These are listed bellow.
 				</p>
 			</div>
 		</div>

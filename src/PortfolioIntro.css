@@ -3,6 +3,12 @@
 	padding: 0;
 }
 
+.intro .my-name {
+	font-size: 2.5rem;
+	padding: 3px;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
 .intro__text {
 	margin: 0px auto;
 }
@@ -16,16 +22,20 @@
 	padding: 0 1rem;
 }
 
+.intro p#first {
+	text-align: center;
+}
+
 .intro__text ul {
 	list-style-position: inside;
 	padding: 0.5rem 1rem;
-	background: radial-gradient(circle at left 200%, var(--detail-color) 0%, transparent 65%);
+	background: radial-gradient(circle at left 250%, var(--detail-color) 0%, transparent 55%);
 	border-radius: 8px;
 	font-size: 1.2em;
 }
 
 @media (max-width: 768px) {
 	.intro__text ul {
-		background: radial-gradient(circle at left 160%, var(--detail-color) 0%, transparent 85%);
+		background: radial-gradient(circle at left 170%, var(--detail-color) 0%, transparent 72%);
 	}
 }
