@@ -3,11 +3,8 @@
 	position: fixed;
 	width: 90%;
 	max-width: calc(1200px * 0.90);
-	/* ← Match portfolio max-width */
 	left: 50%;
-	/* ← Center it */
 	transform: translateX(-50%);
-	/* ← Perfect centering */
 	top: 10px;
 	z-index: 1000;
 	margin: 0;
@@ -45,6 +42,30 @@
 
 .navbar__item a:hover {
 	color: color-mix(in srgb, currentColor, var(--detail-color) 60%);
+}
+
+@keyframes highlight-pulse {
+	0% {
+		outline: var(--highlight-outline-width) solid transparent;
+		outline-offset: 5px;
+	}
+
+	50% {
+		outline: calc(var(--highlight-outline-width) * 2.5) solid var(--detail-color);
+		outline-offset: 10px;
+	}
+
+	100% {
+		outline: var(--highlight-outline-width) solid transparent;
+		outline-offset: 5px;
+	}
+}
+
+.highlight-pulse-active {
+	--highlight-outline-width: 4px;
+
+	animation: highlight-pulse 1.3s ease-out;
+	border-radius: 8px;
 }
 
 @media (max-width: 768px) {
