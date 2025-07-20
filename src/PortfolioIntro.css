@@ -1,4 +1,7 @@
 .intro {
+	--name-glow: rgba(255, 255, 255, 0.60);
+	--skills-list-background-color: var(--detail-color);
+
 	margin-bottom: 30px;
 	padding: 0;
 }
@@ -14,6 +17,7 @@
 }
 
 .intro strong {
+	text-shadow: 0px 0px 25px var(--name-glow);
 	color: var(--detail-color);
 }
 
@@ -29,14 +33,14 @@
 .intro__text ul {
 	list-style-position: inside;
 	padding: 0.5rem 1rem;
-	background: radial-gradient(circle at left 250%, var(--detail-color) 0%, transparent 55%);
+	background: radial-gradient(circle at left 250%, var(--skills-list-background-color) 0%, transparent 55%);
 	border-radius: 8px;
 	font-size: 1.2em;
 }
 
 @media (max-width: 768px) {
 	.intro__text ul {
-		background: radial-gradient(circle at left 170%, var(--detail-color) 0%, transparent 72%);
+		background: radial-gradient(circle at left 170%, var(--skills-list-background-color) 0%, transparent 70%);
 	}
 
 	.intro .my-name {

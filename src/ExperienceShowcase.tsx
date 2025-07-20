@@ -23,10 +23,10 @@ import './ExperienceShowcase.css'
 function ExperienceShowcase() {
 	return (
 		<div className='experience-section' id='experience'>
-			<h1>Experience</h1>
+			<h1>Software Development Experience</h1>
 
 			<h3>
-				During my time at BTH as well as through personal endeavors, I have gained extensive knowledge in several programming languages and technologies that are listed bellow. They are ordered by how much experience and confidence I have in each, from top to bottom.
+				During my time at BTH as well as through personal endeavors, I have gained extensive knowledge in several programming languages and technologies that are listed bellow. They are ordered by how much experience and understanding I have in each, from top to bottom, left to right.
 			</h3>
 
 			<div className='showcase-container'>
@@ -68,9 +68,8 @@ function ExperienceShowcase() {
 			<p>
 				We worked a classic "9 to 5" five-day work week in a SCRUM environment with two week sprints. We had to first pitch our initial idea and also had to present our work at
 				the end of every sprint to a group of teachers, who acted as our stakeholders. They also helped through
-				supervision but we were the product owners and had full creative freedom over <i>what</i> we wanted to create and <i>how</i>
-				it should be created. The only requirement was that we had to deliver a finished product
-				and that we could not use a graphics library for rendering our game assets.
+				supervision but we were the product owners and had full creative freedom over <i>what</i> we wanted to create and <i>how</i> it should be created.
+				The only requirement was that we had to deliver a finished product and that we could not use a graphics library for rendering our game assets.
 			</p>
 		</div>
 

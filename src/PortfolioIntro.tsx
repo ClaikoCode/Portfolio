@@ -3,7 +3,6 @@ import './PortfolioIntro.css'
 function PortfolioIntro() {
 	return (
 		<div className='intro' id='intro'>
-			<h1>Introduction</h1>
 			<div className='intro__text'>
 				<p id='first'>
 					My name is <strong className='my-name'>Jonathan&nbsp;Dell'Ova</strong>
@@ -11,15 +10,18 @@ function PortfolioIntro() {
 
 				<p>
 					I am a video game developer primarily experienced in game engine programming and 3D graphics programming.
-					This includes everything from setting up a C++ project with third-party
-					library building and linking (EnTT, ImGui, CUDA, etc.) to creating a rendering engine
+				</p>
+
+				<p>
+					This includes everything from setting up a C++ Visual Studio project with third-party
+					library compilation (EnTT, ImGui, CUDA, etc.) to creating a rendering engine
 					in DirectX 11 with a frustum culled render queue, PBR rendering pipeline, UUID based model asset manager/loader,
 					multi-threaded runtime shader compilation system with hot-reloading, and more.
 				</p>
 
 				<p>
 					My degree, a <b>Master of Science in Engineering: Game and Software Engineering</b>, at <a href='https://www.bth.se/'>Blekinge Institute of Technology (BTH)</a> has
-					given me specialized knowledge in efficient real-time programming, which I gained from courses such as:
+					given me deep knowledge of efficient real-time programming, which I gained from courses such as:
 				</p>
 
 				<ul>
@@ -30,7 +32,7 @@ function PortfolioIntro() {
 				</ul>
 
 				<p>
-					My degree has also given me more general but still essential knowledge in:
+					My degree has also given me essential knowledge in:
 				</p>
 
 				<ul>
