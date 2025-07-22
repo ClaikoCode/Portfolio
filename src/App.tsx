@@ -39,7 +39,7 @@ const projects: Project[] = [
 		description: "This project was part of an optional 3D programming course where we had to come up with our own problem to solve that would showcase the capabilities of modern graphics APIs.",
 		showcaseUrl: '/RTAO.gif',
 		showcaseAlt: "GIF of the RT AO frame rendering steps.",
-		videoUrl: "/RCDemo.mp4",
+		videoUrl: "/RTAODemo.mp4",
 		expandedDesc: "I chose to create a simple but complete solution for AO using raytracing with temporal accumulation, which was my introduction to DX12 and DXR. This course was uniquely rewarding as we were fortunate enough to have the lectures be held by BTH alumni and Principal Member of Technical Staff at AMD: Stefan Petersson."
 	},
 	{
@@ -48,7 +48,7 @@ const projects: Project[] = [
 		description: "A solo developed compiler for a subset of Java called MiniJava. The project was part of an optional course in compiler design, which I received top grade in.",
 		showcaseUrl: "./CompilerPreview.gif",
 		showcaseAlt: "Physics simulation screenshot",
-		videoUrl: "/RCDemo.mp4",
+		videoUrl: "/MiniJavaCompilerDemo.mp4",
 		expandedDesc: "The compiler includes: lexing, parsing, AST generation, semantic analysis, IR creation, and code generation."
 	},
 ];
