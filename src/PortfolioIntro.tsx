@@ -20,7 +20,7 @@ function PortfolioIntro() {
 				</p>
 
 				<p>
-					My degree, a <b>Master of Science in Engineering: Game and Software Engineering</b>, at <a href='https://www.bth.se/'>Blekinge Institute of Technology (BTH)</a> has
+					My degree, a <b>Master of Science in Engineering: Game and Software Engineering</b>, at <a href='https://www.bth.se/' target='_blank'>Blekinge Institute of Technology (BTH)</a> has
 					given me deep knowledge of efficient real-time programming, which I gained from courses such as:
 				</p>
 
