@@ -7,6 +7,8 @@ import { type Project } from './ProjectRow';
 
 import './App.css'
 
+import mySQLIcon from './assets/MySQLWordmark.svg'
+
 const navbarItems: NavbarItem[] = [
 	{ id: 'intro', href: '#intro', label: 'Introduction' },
 	{ id: 'projects', href: '#projects', label: 'Projects' },
@@ -32,6 +34,15 @@ const projects: Project[] = [
 		showcaseAlt: "Game engine rendering demo",
 		videoUrl: "https://www.youtube.com/embed/NRiXL1utbLc",
 		expandedDesc: "The rendering system features: deferred PBR rendering pipeline, internal GPU resource management and abstraction, HLSL shader hot-reloading, modern PPFX such as multi-pass bloom and HDR tone-mapping, back-to-front transparency render ordering, and more. Additional tech is shown towards the middle of the video."
+	},
+	{
+		id: 5,
+		title: "Game Progression Database using MySQL",
+		description: "A MySQL driven mock database with a command line interface using Python. I'm particularly proud of this project because of its intuitive and helpful UX, which went above and beyond the projects requirements.",
+		showcaseUrl: mySQLIcon,
+		showcaseAlt: "A wordmark icon for MySQL",
+		videoUrl: "https://www.youtube.com/embed/JG3zN4CBYRE",
+		expandedDesc: "The interface uses a modular color-coded output system with robust back-end error handling. The colors follow a swappable palette that is related to the type of output that is shown, outputs are formatted dynamically with embedded margins, relevant execution flow output, and usage patterns are consistent with typical SLI applications. This made the user experience cohesive and intuitive, which ensured a friction free usage of the app."
 	},
 	{
 		id: 4,
