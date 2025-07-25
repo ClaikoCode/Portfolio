@@ -7,7 +7,7 @@ import { type Project } from './ProjectRow';
 
 import './App.css'
 
-import mySQLIcon from './assets/MySQLWordmark.svg'
+import mySQLIcon from './assets/MySQLWordmarkPlain.svg'
 
 const navbarItems: NavbarItem[] = [
 	{ id: 'intro', href: '#intro', label: 'Introduction' },
