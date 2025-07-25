@@ -1,16 +1,16 @@
 # Portfolio
 
-This portfolio was built using React + Vite + Tailwind and serves as a showcase for my projects. The portfolio itself is also its own project as I will be attempting to creating this portfolio not knowing any specifics around Vite, React, or Tailwind.
+This portfolio was built using React + Vite + TypeScript and serves as a showcase for my projects. The portfolio itself is also its own project as I will be attempting to creating this portfolio not knowing any specifics around Vite, React, or Tailwind.
 
 The goals for this project are:
 
-* Have a free website that I have full controll over and can host locally if I choose to do so in the future. 
-* To challange my general programming knowledge by seeing if I can adapt to an entirely different programming environment in a reasonable time (at a basic level). 
+* Have a free website that I have full control over and can host locally if I choose to do so in the future. 
+* To challenge my general programming knowledge by seeing if I can adapt to an entirely different programming environment in a reasonable time (at a basic level). 
 
-In todays day and age, we can make use of LLMs to tackle these kinds of challanges in an efficient way. It is essentially a perfect case for it:
+In todays day and age, we can make use of LLMs to tackle these kinds of challenges in an efficient way. It is essentially a perfect case for it:
 
 1. Most LLMs understand basic web-dev code well and portfolio websites are very common projects for junior web-devs. 
-2. I dont have much *practical* reason to learn a modern web-dev stack for my career which is in game development.
+2. I don't have much *practical* reason to learn a modern web-dev stack for my career which is in game development.
 3. With todays AI tools, a simple website for a portfolio could most certainly be built if given a design document and some extra prompts for direction/adjustment.
 
 Having all of this said, I will push myself to write all code myself and any prompts that will be used to get help from an LLM will be made to educate myself rather than to produce code that can be copied and pasted without thought. 
