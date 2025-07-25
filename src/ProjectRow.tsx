@@ -11,6 +11,7 @@ export type Project = {
 	description: string;
 	showcaseUrl: string;
 	showcaseAlt: string;
+	showcaseSource?: string; // Link to the source for the showcase.
 	expandedDesc?: string;
 	videoUrl: string;
 }
@@ -28,6 +29,12 @@ function ProjectRow({ project, isReversed = false }: ProjectRowProps) {
 	const rowContentClasses = "project-content" + (isReversed ? " project-content--reversed" : "");
 	const isYoutubeEmbedLink = project.videoUrl.includes('https://www.youtube.com/embed/');
 
+	const showcaseImageElement = <img
+		className="project-content__image"
+		src={project.showcaseUrl}
+		alt={project.showcaseAlt}
+	/>
+
 	return (
 		<div className={containerClasses}>
 			<div className={rowContentClasses}>
@@ -44,11 +51,11 @@ function ProjectRow({ project, isReversed = false }: ProjectRowProps) {
 				</div>
 
 				<div className="project-content__showcase">
-					<img
-						className="project-content__image"
-						src={project.showcaseUrl}
-						alt={project.showcaseAlt}
-					/>
+					{project.showcaseSource ? (
+						<a href={project.showcaseSource} target="_blank">{showcaseImageElement}</a>
+					) : (
+						showcaseImageElement
+					)}
 
 					{project.videoUrl && (
 						<div ref={videoContainerRef} className="video-container">

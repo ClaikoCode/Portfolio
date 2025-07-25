@@ -21,8 +21,9 @@ const projects: Project[] = [
 		id: 3,
 		title: "Novel DDGI Solution in DX12",
 		description: "As part of my masters project, I implemented a novel Dynamic Diffuse Global Illumination (DDGI) solution called Radiance Cascades in DX12 with DXR.",
-		showcaseUrl: "https://www.scratchapixel.com/images/ray-tracing-camera/campixel.gif?",
-		showcaseAlt: "Ray traced scene",
+		showcaseUrl: "/RCGIPreview.gif",
+		showcaseAlt: "GIF showing lighting contribution from each cascade.",
+		showcaseSource: "https://youtu.be/TrHHTQqmAaM?t=2113",
 		videoUrl: "/RCDemo.mp4",
 		expandedDesc: "It is my most ambitious solo project I have made and proudly received compliments from the creator of the technique himself: Alexander Sannikov at Grinding Gear Games."
 	},
