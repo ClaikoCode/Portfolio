@@ -48,7 +48,7 @@ function PortfolioIntro() {
 				<p>
 					Although these were all part of my curriculum, it is the projects themselves that have given me the most experience as a software engineer.
 					Almost every course had its own project but a select few has stood out to me. Not only in terms of complexity, but also in terms of how proud I am for
-					having overcome the challenges that accompanied these projects and how much I learned from them. These are listed bellow.
+					having overcome the challenges that accompanied these projects and how much I learned from them. These are listed below.
 				</p>
 			</div>
 		</div>

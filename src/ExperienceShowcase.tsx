@@ -27,7 +27,7 @@ function ExperienceShowcase() {
 			<h1>Software Development Experience</h1>
 
 			<h3>
-				During my time at BTH as well as through personal endeavors, I have gained extensive knowledge in several programming languages and technologies that are listed bellow. They are ordered by how much personal experience and understanding I have in each, from top to bottom, left to right.
+				During my time at BTH as well as through personal endeavors, I have gained extensive knowledge in several programming languages and technologies that are listed below. They are ordered by how much personal experience and understanding I have in each, from top to bottom, left to right.
 			</h3>
 
 			<div className='showcase-container'>
