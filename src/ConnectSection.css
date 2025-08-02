@@ -28,6 +28,10 @@
 
 .connect-other {}
 
+.connect-info_text {
+	max-width: 300px;
+}
+
 .connect-other p {
 	padding: 0;
 	margin: 0;

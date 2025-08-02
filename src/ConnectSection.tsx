@@ -26,11 +26,20 @@ function ConnectMail() {
 	)
 }
 
-function ConnectOther() {
+function ConnectCV() {
 	return (
 		<div className='connect-other'>
-			<h2>Other</h2>
-			<p>This is some other text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nostrum natus fugiat. Quae, facilis in nam blanditiis odit est inventore ipsum alias, repellat molestias iste amet. Accusantium mollitia necessitatibus tempora?</p>
+			<h2>CV</h2>
+			<a href='/JonathanDellOvaCV.pdf' download={true}>Download as PDF</a>
+		</div>
+	)
+}
+
+function ConnectInfo() {
+	return (
+		<div className='connect-info'>
+			<h2>Info</h2>
+			<p className='connect-info_text'>This website was built in 16 working days by me with not prior knowledge of React, TypeScript, Vite, or CloudFlare.</p>
 		</div>
 	)
 }
@@ -40,7 +49,8 @@ function ConnectSection() {
 		<div className="connect-section" id='connect'>
 			<ConnectSocials />
 			<ConnectMail />
-			{/* <ConnectOther /> */}
+			<ConnectCV />
+			<ConnectInfo />
 		</div>
 	)
 }
