@@ -85,6 +85,10 @@
 	max-width: 0%;
 }
 
+.project-container--expanded a:has(.project-content__image) {
+	max-width: 0%;
+}
+
 .video-container {
 	width: 100%;
 	max-width: 0%;
